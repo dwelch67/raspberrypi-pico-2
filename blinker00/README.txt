@@ -351,28 +351,6 @@ blocks to be for stack.  There are two cores of each flavor.  They used
 I will use 0x20082000 as its stack starting point for core 1.  That is 
 my thinking for now and I could change it at any time.
 
-Sparkfun had rp2350 based boards out before the pi folks, I have preordered
-pico 2 boards from sparkfun, but am using their board while I wait.  For
-reasons I cannot fathom and this is not the first time I have seen this
-they used a neopixel on the same gpio pin that the pico boards use with
-a basic pixel.  The neopixels fall into the guru level of experience
-to have a chance at working (if you dont believe me then you simply 
-borrowed someone elses code and didnt actually figure it out yourself)
-they have no business on a board like this without at least a basic led
-there somewhere too.  The sparkfun board then, as is, cannot be considered
-a beginner board, you have to play not only in the pico sand box but 
-possibly also in the sparkfun sandbox squaring your odds of failure.
-
-Sparkfun has been a cornerstone in my life and career, but in this case
-I seriously have to decide once the pico 2 boards arrive whether to keep
-the sparkfun boards in a box forever as with most projects or literally
-the trash can.  That is how I feel right now.
-
-I have an external led and resistor some pins on each board, using
-gpio 2 because on the sparkfun board it is next to a ground and the 
-code for now has a gpio2 solution.  When the pico 2 boards arrive if I 
-am still motivated to play with the pico 2 I will remove the gpio 2 and
-sparkfun stuff and make it just work with a pico 2 board and for the
-many different blink the led educational steps you will need no
-solder nor pins nor other hardware.  Just the pico 2 board.  You 
-wont need other stuff until you advance to the uart.
+Proper pico 2 boards have a normal led on gpio pin 25, you can get
+through blinking led examples without any pins or additional hardware.
+Eventually you will want pins and a uart.
